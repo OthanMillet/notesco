@@ -1,1 +1,35 @@
-%h1 Othan pogi
+#banner 
+	.banner_content
+		%h1 Notesco
+		%p Just write down everything.
+		%button= link_to "Sign Up", new_user_registration_path
+#testimonial
+	.wrapper
+	%p.quote  "Thoughts are better when written."
+	%p.name - Othan Millet
+
+#callouts
+	.callout_inner
+		.wrapper
+			.callout
+				%i.fas.fa-sticky-note
+				%h2 Notes
+				%p To remember things.
+
+			.callout
+				%i.fas.fa-pencil-alt
+				%h2 Written
+				%p Things can inspire.
+
+			.callout
+				%i.fas.fa-arrow-alt-circle-down
+				%h2 Down
+				%p Moments are the best to write.
+#bottom_cta
+	.wrapper
+		%h2 This is it!
+		%p I want you to sign up... If you don’t. I will find you!
+		%button= link_to "Click Meee!!!", new_user_registration_path
+
+%footer
+	%p &copy; Othan Millet
