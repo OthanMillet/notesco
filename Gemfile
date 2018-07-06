@@ -15,9 +15,12 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'haml', '~> 5.0', '>= 5.0.4'
 gem 'simple_form', '~> 4.0', '>= 4.0.1'
 gem 'devise', '~> 4.4', '>= 4.4.3'
+gem 'omniauth-facebook', '~> 5.0'
+gem 'rubocop', '~> 0.57.2'
+gem 'pry', '~> 0.11.3'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'sqlite3'
+  # gem 'sqlite3'
 end
 
 group :development do
@@ -34,8 +37,8 @@ group :test do
   gem 'chromedriver-helper'
 end
 
-group :production do
+# group :production do
   gem 'pg', '~> 1.0'
-end
+# end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
